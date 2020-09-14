@@ -7,4 +7,6 @@ class GlobalController extends GetxController {
 
     print('🤜 Global inInit');
   }
+
+  Future<void> _loadProducts() async {}
 }
