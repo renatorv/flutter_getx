@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx/controllers/home_controller.dart';
+import 'package:flutter_getx/pages/home_page_widgets/home_list.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,14 +9,8 @@ class HomePage extends StatelessWidget {
     return GetBuilder<HomeController>(
       init: HomeController(),
       builder: (_) {
-        print('build home!!');
         return Scaffold(
-          body: Center(
-            child: GetBuilder<HomeController>(
-              id: 'text',
-              builder: (_) => Text(_.counter.toString()),
-            ),
-          ),
+          body: HomeList(),
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               _.increment();

@@ -1,4 +1,4 @@
-import 'package:flutter_getx/home_page.dart';
+import 'package:flutter_getx/pages/home_page.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/state_manager.dart';
 
