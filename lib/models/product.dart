@@ -18,10 +18,8 @@ class Product {
       id: json['Product ID'],
       nome: json['Name'],
       description: json['Description'],
-      price: json['Price'],
-      rate: json['Rating Avg'],
+      price: json['Price'].toDouble(),
+      rate: json['Rating Avg'].toDouble(),
     );
   }
 }
-
-// 7:21 classe 10
